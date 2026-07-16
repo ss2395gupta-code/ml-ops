@@ -1,4 +1,4 @@
-name: CI - Train and Save the model for me
+name: CI - Train and Save the model
 
 on:
   push:
@@ -31,7 +31,7 @@ jobs:
 
       - name: Train the model
         run: |
-           python train.py
+           python train.python
            ls -la artifacts
       
       - name: Upload artifacts
